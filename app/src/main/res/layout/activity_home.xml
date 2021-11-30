@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0983D6"
+    android:orientation="vertical"
+    tools:context=".Log_in_activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#0983D6">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/bmi_analyser"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="666dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_userFistName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#00FFFFFF"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Hi, Sharaf"
+                    android:textColor="#090909"
+                    android:textSize="28sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FAF8F8">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_carrent_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="#00FFFFFF"
+                            android:fontFamily="sans-serif"
+                            android:text="Current Status"
+                            android:textColor="#0983D6"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border3"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="textPersonName"
+                            android:text="Normal (still Good)"
+                            android:textColor="#808080"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#FAF8F8">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_old_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="#00FFFFFF"
+                            android:fontFamily="sans-serif"
+                            android:text="Old Status"
+                            android:textColor="#0983D6"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="290dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border2"
+                            android:padding="3dp">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:background="#0983D6">
+
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+
+                                        <FrameLayout
+                                            android:layout_width="270dp"
+                                            android:layout_height="70dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:background="#FFFFFF"
+                                            android:padding="5dp">
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_history_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="20/12/2021"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+                                                    <TextView
+                                                        android:id="@+id/tv_weight_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="60 Kg"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+
+                                                <View
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1.5dp"
+                                                    android:background="#0983D6" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="Normal"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+
+                                                    <TextView
+                                                        android:id="@+id/tv_length_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="170 Cm"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </FrameLayout>
+                                        <FrameLayout
+                                            android:layout_width="270dp"
+                                            android:layout_height="70dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:background="#FFFFFF"
+                                            android:padding="5dp">
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_history_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="20/12/2021"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+                                                    <TextView
+                                                        android:id="@+id/tv_weight_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="60 Kg"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+
+                                                <View
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1.5dp"
+                                                    android:background="#0983D6" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="Normal"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+
+                                                    <TextView
+                                                        android:id="@+id/tv_length_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="170 Cm"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </FrameLayout>
+                                        <FrameLayout
+                                            android:layout_width="270dp"
+                                            android:layout_height="70dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:background="#FFFFFF"
+                                            android:padding="5dp">
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_history_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="20/12/2021"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+                                                    <TextView
+                                                        android:id="@+id/tv_weight_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="60 Kg"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+
+                                                <View
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1.5dp"
+                                                    android:background="#0983D6" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="Normal"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+
+                                                    <TextView
+                                                        android:id="@+id/tv_length_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="170 Cm"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </FrameLayout><FrameLayout
+                                        android:layout_width="270dp"
+                                        android:layout_height="70dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:background="#FFFFFF"
+                                        android:padding="5dp">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="30dp"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/tv_history_status"
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:fontFamily="sans-serif-medium"
+                                                    android:gravity="center"
+                                                    android:text="20/12/2021"
+                                                    android:textSize="17sp" />
+
+                                                <View
+                                                    android:layout_width="1.5dp"
+                                                    android:layout_height="match_parent"
+                                                    android:background="#0983D6" />
+
+                                                <TextView
+                                                    android:id="@+id/tv_weight_status"
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:fontFamily="sans-serif-medium"
+                                                    android:gravity="center"
+                                                    android:text="60 Kg"
+                                                    android:textSize="17sp" />
+                                            </LinearLayout>
+
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="1.5dp"
+                                                android:background="#0983D6" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="30dp"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/tv_status"
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:fontFamily="sans-serif-medium"
+                                                    android:gravity="center"
+                                                    android:text="Normal"
+                                                    android:textSize="17sp" />
+
+                                                <View
+                                                    android:layout_width="1.5dp"
+                                                    android:layout_height="match_parent"
+                                                    android:background="#0983D6" />
+
+
+                                                <TextView
+                                                    android:id="@+id/tv_length_status"
+                                                    android:layout_width="30dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:layout_weight="1"
+                                                    android:fontFamily="sans-serif-medium"
+                                                    android:gravity="center"
+                                                    android:text="170 Cm"
+                                                    android:textSize="17sp" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </FrameLayout>
+                                        <FrameLayout
+                                            android:layout_width="270dp"
+                                            android:layout_height="70dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:background="#FFFFFF"
+                                            android:padding="5dp">
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_history_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="20/12/2021"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+                                                    <TextView
+                                                        android:id="@+id/tv_weight_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="60 Kg"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+
+                                                <View
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1.5dp"
+                                                    android:background="#0983D6" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="Normal"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+
+                                                    <TextView
+                                                        android:id="@+id/tv_length_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="170 Cm"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </FrameLayout>
+                                        <FrameLayout
+                                            android:layout_width="270dp"
+                                            android:layout_height="70dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:background="#FFFFFF"
+                                            android:padding="5dp">
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="vertical">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_history_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="20/12/2021"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+                                                    <TextView
+                                                        android:id="@+id/tv_weight_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="60 Kg"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+
+                                                <View
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="1.5dp"
+                                                    android:background="#0983D6" />
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="Normal"
+                                                        android:textSize="17sp" />
+
+                                                    <View
+                                                        android:layout_width="1.5dp"
+                                                        android:layout_height="match_parent"
+                                                        android:background="#0983D6" />
+
+
+                                                    <TextView
+                                                        android:id="@+id/tv_length_status"
+                                                        android:layout_width="30dp"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:layout_weight="1"
+                                                        android:fontFamily="sans-serif-medium"
+                                                        android:gravity="center"
+                                                        android:text="170 Cm"
+                                                        android:textSize="17sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </FrameLayout>
+
+
+                                    </LinearLayout>
+                                </ScrollView>
+                            </FrameLayout>
+
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="5dp">
+
+                            <Button
+                                android:id="@+id/btn_add_food"
+                                android:layout_width="150dp"
+                                android:layout_height="55dp"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-medium"
+                                android:shadowColor="#252525"
+                                android:text="Add Food"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:backgroundTint="#0983D6" />
+
+                            <Space
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <Button
+                                android:id="@+id/btn_add_record"
+                                android:layout_width="150dp"
+                                android:layout_height="55dp"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Add Record"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:backgroundTint="#0983D6"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_view_food"
+                            android:layout_width="350dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="View Food"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="#0983D6"/>
+
+                        <TextView
+                            android:id="@+id/tv_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:text="@string/log_out_link"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

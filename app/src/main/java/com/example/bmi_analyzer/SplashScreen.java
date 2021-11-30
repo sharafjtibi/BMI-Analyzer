@@ -28,6 +28,7 @@ public class SplashScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SplashScreen.this,Log_in_activity.class);
                 startActivity(intent);
+                finish();
             }
 
 

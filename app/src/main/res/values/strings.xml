@@ -23,5 +23,9 @@
     <string name="re_password">Re-Password</string>
     <string name="e_mail">E-mail</string>
     <string name="if_you_do_not_already_have_an_account">If you do not already have an account</string>
+    <string name="save_data">Save Data</string>
+
+    <string name="log_out_link"><u>Logout</u></string>
+
 
 </resources>
