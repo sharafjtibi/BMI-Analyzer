@@ -7,6 +7,8 @@
         <entry key="..\:/android/BMIAnalyzer/app/src/main/res/drawable/border2.xml" value="0.236328125" />
         <entry key="..\:/android/BMIAnalyzer/app/src/main/res/drawable/border3.xml" value="0.236328125" />
         <entry key="..\:/android/BMIAnalyzer/app/src/main/res/drawable/round_corner.xml" value="0.30234375" />
+        <entry key="..\:/android/BMIAnalyzer/app/src/main/res/layout/activity_add_food.xml" value="0.22" />
+        <entry key="..\:/android/BMIAnalyzer/app/src/main/res/layout/activity_add_record.xml" value="0.25" />
         <entry key="..\:/android/BMIAnalyzer/app/src/main/res/layout/activity_complete_info.xml" value="0.2814207650273224" />
         <entry key="..\:/android/BMIAnalyzer/app/src/main/res/layout/activity_complete_sign_up.xml" value="0.25" />
         <entry key="..\:/android/BMIAnalyzer/app/src/main/res/layout/activity_home.xml" value="0.22" />
