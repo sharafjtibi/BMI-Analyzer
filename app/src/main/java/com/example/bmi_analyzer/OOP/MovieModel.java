@@ -1,4 +1,4 @@
-package com.example.bmi_analyzer.adapter;
+package com.example.bmi_analyzer.OOP;
 
 public class MovieModel {
 

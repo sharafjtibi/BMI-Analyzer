@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.bmi_analyzer.adapter.MovieModel;
+import com.example.bmi_analyzer.OOP.MovieModel;
 import com.example.bmi_analyzer.data.Add_Food;
 import com.example.bmi_analyzer.data.Add_Record;
 import com.example.bmi_analyzer.data.TestAdapter;
@@ -23,6 +23,10 @@ public class Home_Activity extends AppCompatActivity {
     private Button toAddRecord;
     private Button toAddFood;
     private RecyclerView recyclerView;
+
+    public static void checkBMIChange() {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

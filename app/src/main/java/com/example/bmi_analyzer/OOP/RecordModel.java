@@ -1,4 +1,4 @@
-package com.example.bmi_analyzer.adapter;
+package com.example.bmi_analyzer.OOP;
 
 public class RecordModel {
 
@@ -41,6 +41,9 @@ public class RecordModel {
         this.date = date;
         this.length = length;
         this.weight = weight;
+    }
+
+    public void setId(String key) {
     }
 }
 

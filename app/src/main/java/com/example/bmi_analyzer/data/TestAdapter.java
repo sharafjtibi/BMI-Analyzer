@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bmi_analyzer.R;
-import com.example.bmi_analyzer.adapter.MovieModel;
+import com.example.bmi_analyzer.OOP.MovieModel;
 
 import java.util.ArrayList;
 import java.util.List;
