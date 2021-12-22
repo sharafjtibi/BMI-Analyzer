@@ -2,6 +2,9 @@ package com.example.bmi_analyzer.adapter;
 
 public class MovieModel {
 
+    String name;
+
+
     public String getName() {
         return name;
     }
@@ -10,9 +13,12 @@ public class MovieModel {
         this.name = name;
     }
 
-    String name;
+
 
     public MovieModel(String name) {
         this.name = name;
     }
 }
+
+
+
