@@ -88,7 +88,7 @@
                             android:layout_width="140dp"
                             android:layout_height="30dp"
                             android:ems="10"
-                            android:inputType="date"
+                            android:inputType="text"
                             android:background="@drawable/border1"
                             android:padding="4dp"
                             />

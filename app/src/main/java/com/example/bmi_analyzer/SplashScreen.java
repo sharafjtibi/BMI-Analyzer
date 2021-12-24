@@ -26,7 +26,7 @@ public class SplashScreen extends AppCompatActivity {
         move.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SplashScreen.this,Log_in_activity.class);
+                Intent intent = new Intent(SplashScreen.this,Sign_up_activity.class);
                 startActivity(intent);
                 finish();
             }
