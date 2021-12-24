@@ -22,6 +22,7 @@ public class Home_Activity extends AppCompatActivity {
     private TextView logOut;
     private Button toAddRecord;
     private Button toAddFood;
+    private Button viewFood;
     private RecyclerView recyclerView;
 
     public static void checkBMIChange() {
@@ -35,6 +36,7 @@ public class Home_Activity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recycler);
 
+
         logOut=(TextView)findViewById(R.id.tv_logout);
         logOut.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -46,6 +48,18 @@ public class Home_Activity extends AppCompatActivity {
 
 
         });
+
+        viewFood = findViewById(R.id.btn_view_food);
+        viewFood.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home_Activity.this, View_food.class);
+                startActivity(intent);
+            }
+
+
+        });
+
 
 
 
